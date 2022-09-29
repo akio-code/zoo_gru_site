@@ -1,2 +1,9 @@
 # IDE
 .idea
+
+# Project libs
+node_modules/
+
+# Generated
+dist/
+package-lock.json
