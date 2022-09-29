@@ -1,0 +1,11 @@
+{
+  "name": "zoo_site",
+  "version": "0.0.1",
+  "description": "Site do Zoo de Guarulhos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lucas Akio - 212402022",
+  "license": "ISC"
+}
