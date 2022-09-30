@@ -4,12 +4,16 @@
   "description": "Site do Zoo de Guarulhos",
   "private": true,
   "scripts": {
-    "build": "webpack"
+    "build": "webpack --mode development",
+    "serve": "webpack serve"
   },
   "author": "Lucas Akio - 212402022",
   "license": "ISC",
   "devDependencies": {
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   }
 }
