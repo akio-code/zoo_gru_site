@@ -1,0 +1,22 @@
+#zoo-events {
+  padding: 5rem 0;
+  background-color: rgba(221,235,233, 1);;
+
+  .event-content {
+    h4 {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .event-banner {
+    display: flex;
+    justify-content: center;
+
+    img {
+      height: 300px;
+    }
+  }
+}
