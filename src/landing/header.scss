@@ -1,0 +1,67 @@
+#zoo-header {
+  position: absolute;
+
+  z-index: 99;
+
+  width: 100%;
+  padding-top: 1.5rem;
+
+  background-color: rgba(26,161,102, 0.5);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, .25);
+  backdrop-filter: blur(10px);
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+
+    .logo {
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+        margin: 0 0 0.5rem 0;
+
+        li {
+          a {
+            margin: 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Color Theme Swatches in Hex */
+//$Zoo-1-hex: #1BA166;
+//$Zoo-2-hex: #1B6B6E;
+//$Zoo-3-hex: #FAFFF5;
+//$Zoo-4-hex: #DEEBEA;
+//$Zoo-5-hex: #FF7578;
+
+/* Color Theme Swatches in RGBA */
+//$Zoo-1-rgba: rgba(26,161,102, 1);
+//$Zoo-2-rgba: rgba(26,107,110, 1);
+//$Zoo-3-rgba: rgba(249,255,244, 1);
+//$Zoo-4-rgba: rgba(221,235,233, 1);
+//$Zoo-5-rgba: rgba(255,117,119, 1);
+
+/* Color Theme Swatches in HSLA */
+//$Zoo-1-hsla: hsla(153, 71, 36, 1);
+//$Zoo-2-hsla: hsla(182, 60, 26, 1);
+//$Zoo-3-hsla: hsla(89, 100, 98, 1);
+//$Zoo-4-hsla: hsla(175, 24, 89, 1);
+//$Zoo-5-hsla: hsla(358, 100, 72, 1);
+

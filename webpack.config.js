@@ -10,6 +10,7 @@ module.exports = {
         },
         bootstrap: './src/vendor/bootstrap.js',
         glider: './src/vendor/glider.js',
+        fontAwesome: './src/vendor/font-awesome.js',
     },
     output: {
         filename: '[name].js',
@@ -26,7 +27,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(jpe?g|png|gif|svg)$/i,
+                test: /\.(jpe?g|png|gif|svg|eot|ttf|woff)$/,
                 type: 'asset/resource',
                 // loader: 'file-loader',
                 // options: {
