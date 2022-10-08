@@ -8,33 +8,38 @@ module.exports = {
             import: './src/index.js',
             dependOn: 'bootstrap'
         },
-        bootstrap: './src/vendor/bootstrap.js'
+        bootstrap: './src/vendor/bootstrap.js',
+        glider: './src/vendor/glider.js',
     },
     output: {
         filename: '[name].js',
         path: path.resolve(__dirname, 'dist'),
+        assetModuleFilename: 'assets/[name].[ext]'
     },
-    // optimization: {
-    //     splitChunks: {
-    //         chunks: 'all'
-    //     }
-    // },
 
     devServer: {
         static: path.resolve(__dirname, 'dist'),
         port: 8080,
-        hot: true
+        hot: true,
     },
 
     module: {
         rules: [
             {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                type: 'asset/resource',
+                // loader: 'file-loader',
+                // options: {
+                //     name: '/assets/[name].[ext]'
+                // }
+            },
+            {
                 test: /\.(scss)$/,
                 use: [
-                    MiniCssExtractPlugin.loader,
-                    // {
-                    //     loader: 'style-loader'
-                    // },
+                    // MiniCssExtractPlugin.loader,
+                    {
+                        loader: 'style-loader'
+                    },
                     {
                         loader: 'css-loader'
                     },

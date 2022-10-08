@@ -1,0 +1,44 @@
+#zoo-banner {
+  border: thin solid red;
+  height: 100vh;
+  position: relative;
+
+  .zoo-carousel {
+    height: inherit;
+    overflow: hidden;
+    display: grid;
+
+    .zoo-carousel-slide {
+      background-size: cover;
+      background-position: center center;
+
+      &.slide-1 {
+        background-image: url("assets/pexels-haugenzhays-zhang-1435496.jpg");
+      }
+
+      &.slide-2 {
+        background-image: url("assets/pexels-pixabay-259434.jpg");
+      }
+
+      &.slide-3 {
+        background-image: url("assets/pexels-jimmy-chan-1000529.jpg");
+      }
+    }
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+  }
+
+  .prev {
+    left: 10%;
+    border: thin solid red;
+  }
+
+  .next {
+    right: 10%;
+    border: thin solid red;
+  }
+
+}
