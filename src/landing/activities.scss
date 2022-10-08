@@ -1,0 +1,17 @@
+#zoo-activities {
+  padding: 5rem 0;
+
+  $activity-height: 400px;
+
+  .zoo-activity {
+    height: $activity-height;
+
+    h3 {
+      margin-bottom: 2rem;
+    }
+
+    .activity-cover {
+      height: $activity-height;
+    }
+  }
+}
