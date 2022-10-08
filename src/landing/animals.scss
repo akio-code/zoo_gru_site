@@ -1,0 +1,28 @@
+#zoo-animals {
+  padding: 6rem 0;
+  background-color: rgba(221,235,233, 0.5);
+
+  .zoo-gallery {
+    height: 80vh;
+
+    margin-right: 0;
+    margin-left: 0;
+
+    > .col,
+    > [class*="col-"] {
+      display: flex;
+      flex-direction: column;
+
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
+
+  .animal-cover {
+    flex: 1 1 100%;
+    border: 1rem solid white;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+  }
+}

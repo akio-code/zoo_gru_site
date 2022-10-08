@@ -13,10 +13,11 @@
             <span class="logo">ZooGru</span>
             <nav>
                 <ul>
-                    <li><a href="#">Eventos</a></li>
-                    <li><a href="#">Atividades</a></li>
-                    <li><a href="#">Animais</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#zoo-banner">Home</a></li>
+                    <li><a href="#zoo-events">Eventos</a></li>
+                    <li><a href="#zoo-activities">Atividades</a></li>
+                    <li><a href="#zoo-animals">Animais</a></li>
+                    <li><a href="#zoo-contact">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -71,6 +72,12 @@
     <!-- ACTIVITIES -->
     <section id="zoo-activities">
         <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h2>Atividades</h2>
+                </div>
+            </div>
+            <hr>
 
             <!-- ACTIVITY #1 -->
             <div class="row justify-content-center align-items-center no-gutters zoo-activity">
@@ -121,6 +128,83 @@
     </section>
     <!-- /ACTIVITIES -->
 
+    <!-- ANIMALS -->
+    <section id="zoo-animals">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h2>Nossos animais</h2>
+                </div>
+            </div>
+            <hr>
+            <div class="row no-gutters zoo-gallery">
+                <div class="col-6">
+                    <div class="animal-cover"
+                         style="background-image: url(<%=require('./assets/pexels-tina-nord-811486.jpg')%>)">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="animal-cover"
+                         style="background-image: url(<%=require('./assets/pexels-paula-129464.jpg')%>)">
+                    </div>
+
+                    <div class="animal-cover"
+                         style="background-image: url(<%=require('./assets/pexels-stephen-joel-1040659.jpg')%>)">
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="animal-cover"
+                         style="background-image: url(<%=require('./assets/pexels-manab-jyoti-1043130.jpg')%>)">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /ANIMALS -->
+
+    <!-- CONTACT -->
+    <section id="zoo-contact">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <h2>Contato</h2>
+                </div>
+            </div>
+            <hr>
+
+            <div class="row justify-content-center align-items-center">
+                <div class="col-5">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.492221553724!2d-46.554546485045364!3d-23.442703163106152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4ffea13bf09%3A0xb8d85899781b01d4!2sZool%C3%B3gico%20Municipal%20de%20Guarulhos!5e0!3m2!1sen!2sbr!4v1665252349803!5m2!1sen!2sbr"
+                            width="100%"
+                            height="500px"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="col-3 offset-1">
+                    <h4>Contato</h4>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nome">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Mensagem</label>
+                            <textarea class="form-control" id="message" placeholder="Mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-dark">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /CONTACT -->
 
 
 </body>
